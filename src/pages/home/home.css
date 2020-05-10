@@ -1,0 +1,15 @@
+.home {
+    width: 1000px;
+}
+
+@media (max-width: 1024px) {
+    .home {
+        width: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        width: initial;
+    }
+}

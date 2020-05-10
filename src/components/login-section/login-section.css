@@ -1,0 +1,55 @@
+.login-section {
+    padding: 20px;
+    width: 600px;
+}
+
+.login-section > .wrap {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.login-section > .wrap > .login-form > .header > .content {
+    color: #ffffff;
+}
+
+.login-section > .wrap > .login-form > .header > .header {
+    color: #ffffff;
+}
+
+.login-section > .wrap > .login-form > .header > .header > a {
+    color: #db2828;
+}
+
+.login-section > .wrap > .login-form > .header > .header > a:hover {
+    color: #b21e1e;
+}
+
+.login-section > .wrap > .login-form > .form:after {
+    border-color: #ffffff #000000 #000000 #ffffff;
+}
+
+.login-section > .wrap > .login-form > .form:before {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.login-section > .wrap > .login-form > .form > .field > label {
+    color: #ffffff;
+}
+
+.login-section > .wrap > .login-form > .form > .field > .input > input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+@media (max-width: 667px) {
+    .login-section {
+        width: initial;
+    }
+}

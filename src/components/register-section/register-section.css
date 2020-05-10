@@ -1,0 +1,55 @@
+.register-section {
+    padding: 20px;
+    width: 600px;
+}
+
+.register-section > .wrap {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.register-section > .wrap > .register-form > .header > .content {
+    color: #ffffff;
+}
+
+.register-section > .wrap > .register-form > .header > .header {
+    color: #ffffff;
+}
+
+.register-section > .wrap > .register-form > .header > .header > a {
+    color: #db2828;
+}
+
+.register-section > .wrap > .register-form > .header > .header > a:hover {
+    color: #b21e1e;
+}
+
+.register-section > .wrap > .register-form > .form:after {
+    border-color: #ffffff #000000 #000000 #ffffff;
+}
+
+.register-section > .wrap > .register-form > .form:before {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.register-section > .wrap > .register-form > .form > .field > label {
+    color: #ffffff;
+}
+
+.register-section > .wrap > .register-form > .form > .field > .input > input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+@media (max-width: 667px) {
+    .register-section {
+        width: initial;
+    }
+}
