@@ -23,7 +23,7 @@ class MetricSection extends React.Component {
                 </div> : this.props.metricState.metric.length === 0 ?
                     <div className="col">
                         <p>Henüz eklenmiş bir metrik bulunmamaktadır.</p>
-                    </div> : <div className="wrap xl-3">
+                    </div> : <div className="wrap xl-gutter-40 xl-3">
                         {this.props.metricState.metric.map(value => <MetricCard
                             getMetricDispatch={this.props.getMetricDispatch} goal={value.goal} id={value.id}
                             key={value.id} metricOperationsState={this.props.metricOperationsState} name={value.name}
