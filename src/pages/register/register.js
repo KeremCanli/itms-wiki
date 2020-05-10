@@ -13,8 +13,7 @@ class Register extends React.Component {
     render() {
         return (<div>
             <div className="register-background"/>
-            <div
-                className="lg-middle lg-table md-middle md-table register sm-middle sm-table wrap xl-middle xl-table">
+            <div className="lg-middle lg-table md-middle md-table register sm-middle sm-table wrap xl-middle xl-table">
                 <div className="col sm-hidden"/>
                 <RegisterSection registerDispatch={this.props.registerDispatch}
                                  registerState={this.props.registerState}/>

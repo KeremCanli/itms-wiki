@@ -1,0 +1,36 @@
+.metric-card {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.metric-card > .card {
+    width: 100%;
+}
+
+.modal-card > .loader > .segment {
+    border: none;
+    height: 75px;
+}
+
+.modal-card > .message {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.modal-card > .metric-detail {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.modal-card > .metric-detail > .list > .item {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.modal-card > .metric-detail > .list > .item:first-child {
+    padding-top: 0;
+}
+
+.modal-card > .metric-detail > .list > .item:last-child {
+    padding-bottom: 0;
+}

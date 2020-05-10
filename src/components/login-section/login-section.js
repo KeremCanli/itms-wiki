@@ -26,15 +26,15 @@ class LoginSection extends React.Component {
                             Hesabınız yok mu? Şimdi <Link to="/register">kayıt ol.</Link>
                         </Header.Subheader>
                     </Header>
-                    <Form error loading={this.props.loginState.fetching} size="large"
-                          onSubmit={() => this.props.loginDispatch(this.state)}>
+                    <Form error loading={this.props.loginState.fetching}
+                          onSubmit={() => this.props.loginDispatch(this.state)} size="large">
                         <Form.Field control={Input} id="e-mail" label="E-mail"
                                     onChange={event => this.setState({eMail: event.target.value})} required
                                     value={this.state.eMail}/>
                         <Form.Field control={Input} id="password" label="Parola"
-                                    onChange={event => this.setState({password: event.target.value})} type="password"
-                                    required value={this.state.password}/>
-                        <Form.Field color="red" circular content="Giriş Yap" control={Button} size="medium"/>
+                                    onChange={event => this.setState({password: event.target.value})} required
+                                    type="password" value={this.state.password}/>
+                        <Form.Field circular color="red" content="Giriş Yap" control={Button} size="medium"/>
                         {this.props.loginState.error &&
                         <Message content={this.props.loginState.error} error header="Başarısız"/>}
                     </Form>

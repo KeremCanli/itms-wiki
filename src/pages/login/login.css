@@ -1,3 +1,7 @@
+body {
+    overflow-x: auto;
+}
+
 .login {
     height: 100vh;
     overflow: auto;
@@ -10,6 +14,6 @@
     filter: blur(5px);
     height: 100vh;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
 }

@@ -18,7 +18,7 @@ class Home extends React.Component {
         return (this.props.loginState.isLogin ? <div className="lg-table md-table sm-table wrap xl-table">
             <div className="col md-hidden sm-hidden"/>
             <div className="col home">
-                <div className="lg-1 md-1 sm-1 wrap xl-1">
+                <div className="lg-outside-40 lg-1 md-outside-40 md-1 sm-outside-40 sm-1 wrap xl-outside-40 xl-1">
                     <Header resetLoginDispatch={this.props.resetLoginDispatch}/>
                     {this.props.match.path === "/home" &&
                     <MetricSection getMetricDispatch={this.props.getMetricDispatch}

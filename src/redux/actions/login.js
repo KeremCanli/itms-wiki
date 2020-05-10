@@ -1,6 +1,6 @@
 import Axios from "axios";
-import {LOGIN, LOGIN_ERROR, LOGIN_RESET, LOGIN_START} from "../action-types/action-types.js";
 import {serviceURL} from "../../configuration/environment.js";
+import {LOGIN, LOGIN_ERROR, LOGIN_RESET, LOGIN_START} from "../action-types/action-types.js";
 
 export function login(login) {
     return dispatch => {

@@ -1,7 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import {Menu} from "semantic-ui-react";
-import "./header.css";
 
 const header = props => <div className="col header">
     <Menu borderless style={{
@@ -16,6 +15,6 @@ const header = props => <div className="col header">
         <Menu.Item as={NavLink} to="/metric/add">Metrik Ekle</Menu.Item>
         <Menu.Item onClick={() => props.resetLoginDispatch()}>Çıkış Yap</Menu.Item>
     </Menu>
-</div>;
+</div>
 
 export default header;

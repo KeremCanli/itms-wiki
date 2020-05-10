@@ -1,6 +1,6 @@
 import Axios from "axios";
-import {REGISTER, REGISTER_ERROR, REGISTER_RESET, REGISTER_START} from "../action-types/action-types.js";
 import {serviceURL} from "../../configuration/environment.js";
+import {REGISTER, REGISTER_ERROR, REGISTER_RESET, REGISTER_START} from "../action-types/action-types.js";
 
 export function register(register) {
     return dispatch => {

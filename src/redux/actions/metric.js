@@ -1,6 +1,6 @@
 import Axios from "axios";
-import {LOGIN_RESET, METRIC, METRIC_ERROR, METRIC_START} from "../action-types/action-types.js";
 import {serviceURL} from "../../configuration/environment.js";
+import {LOGIN_RESET, METRIC, METRIC_ERROR, METRIC_START} from "../action-types/action-types.js";
 
 export function metric(token) {
     return dispatch => {

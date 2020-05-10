@@ -1,4 +1,5 @@
 import Axios from "axios";
+import {serviceURL} from "../../configuration/environment.js";
 import {
     ADD_METRIC,
     ADD_METRIC_ERROR,
@@ -11,7 +12,6 @@ import {
     GET_METRIC_START,
     LOGIN_RESET
 } from "../action-types/action-types.js";
-import {serviceURL} from "../../configuration/environment.js";
 
 export function addMetric(addMetric, token) {
     return dispatch => {

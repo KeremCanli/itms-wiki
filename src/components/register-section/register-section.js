@@ -7,16 +7,16 @@ class RegisterSection extends React.Component {
     state = {
         eMail: "",
         name: "",
-        surname: "",
-        password: ""
+        password: "",
+        surname: ""
     }
 
     componentWillReceiveProps(nextProps, nextContext) {
         nextProps.registerState.isRegister && this.setState({
             eMail: "",
             name: "",
-            surname: "",
-            password: ""
+            password: "",
+            surname: ""
         });
     }
 
@@ -30,8 +30,8 @@ class RegisterSection extends React.Component {
                             Hesabınız var mı? Şimdi <Link to="/">giriş yap.</Link>
                         </Header.Subheader>
                     </Header>
-                    <Form error loading={this.props.registerState.fetching} size="large"
-                          onSubmit={() => this.props.registerDispatch(this.state)} success>
+                    <Form error loading={this.props.registerState.fetching}
+                          onSubmit={() => this.props.registerDispatch(this.state)} size="large" success>
                         <Form.Field control={Input} id="name" label="Ad"
                                     onChange={event => this.setState({name: event.target.value})} required
                                     value={this.state.name}/>
@@ -42,9 +42,9 @@ class RegisterSection extends React.Component {
                                     onChange={event => this.setState({eMail: event.target.value})} required
                                     value={this.state.eMail}/>
                         <Form.Field control={Input} id="password" label="Parola"
-                                    onChange={event => this.setState({password: event.target.value})} type="password"
-                                    required value={this.state.password}/>
-                        <Form.Field color="red" circular content="Kayıt Ol" control={Button} size="medium"/>
+                                    onChange={event => this.setState({password: event.target.value})} required
+                                    type="password" value={this.state.password}/>
+                        <Form.Field circular color="red" content="Kayıt Ol" control={Button} size="medium"/>
                         {this.props.registerState.error &&
                         <Message content="Bir hata meydana geldi. Lütfen daha sonra tekrar deneyiniz." error
                                  header="Başarısız"/>}
