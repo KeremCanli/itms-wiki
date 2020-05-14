@@ -23,3 +23,5 @@ export const REGISTER = "REGISTER";
 export const REGISTER_ERROR = "REGISTER_ERROR";
 export const REGISTER_RESET = "REGISTER_RESET";
 export const REGISTER_START = "REGISTER_START";
+
+export const RESET_METRIC = "RESET_METRIC";

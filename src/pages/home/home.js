@@ -4,7 +4,8 @@ import {Redirect} from "react-router-dom";
 import {
     addMetric as addMetricDispatch,
     editMetric as editMetricDispatch,
-    getMetric as getMetricDispatch
+    getMetric as getMetricDispatch,
+    resetMetric as resetMetricDispatch
 } from "../../redux/actions/metric-operations.js";
 import {metric as metricDispatch} from "../../redux/actions/metric.js";
 import {resetLogin as resetLoginDispatch} from "../../redux/actions/login.js";
@@ -31,6 +32,7 @@ class Home extends React.Component {
                                             getMetricDispatch={this.props.getMetricDispatch}
                                             id={this.props.match.params.id} matchPath={this.props.match.path}
                                             metricOperationsState={this.props.metricOperationsState}
+                                            resetMetricDispatch={this.props.resetMetricDispatch}
                                             token={this.props.loginState.user.token}/>}
                 </div>
             </div>
@@ -52,7 +54,8 @@ const mapDispatchToProps = {
     editMetricDispatch: editMetricDispatch,
     getMetricDispatch: getMetricDispatch,
     metricDispatch: metricDispatch,
-    resetLoginDispatch: resetLoginDispatch
+    resetLoginDispatch: resetLoginDispatch,
+    resetMetricDispatch: resetMetricDispatch
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

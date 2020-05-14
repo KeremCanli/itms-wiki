@@ -7,7 +7,8 @@ import {
     EDIT_METRIC_START,
     GET_METRIC,
     GET_METRIC_ERROR,
-    GET_METRIC_START
+    GET_METRIC_START,
+    RESET_METRIC
 } from "../action-types/action-types.js";
 
 const initialState = {
@@ -88,6 +89,13 @@ export default (state = initialState, action) => {
                 ...state,
                 error: false,
                 fetching: true,
+                isDone: false,
+                metric: {}
+            };
+        case RESET_METRIC:
+            return {
+                error: false,
+                fetching: false,
                 isDone: false,
                 metric: {}
             };

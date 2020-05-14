@@ -10,7 +10,8 @@ import {
     GET_METRIC,
     GET_METRIC_ERROR,
     GET_METRIC_START,
-    LOGIN_RESET
+    LOGIN_RESET,
+    RESET_METRIC
 } from "../action-types/action-types.js";
 
 export function addMetric(addMetric, token) {
@@ -50,5 +51,11 @@ export function getMetric(id, token) {
                 type: GET_METRIC
             })).catch(error => error.response.status === 401 ? dispatch({type: LOGIN_RESET}) : dispatch({type: GET_METRIC_ERROR}));
         }, 2000);
+    }
+}
+
+export function resetMetric() {
+    return dispatch => {
+        dispatch({type: RESET_METRIC});
     }
 }

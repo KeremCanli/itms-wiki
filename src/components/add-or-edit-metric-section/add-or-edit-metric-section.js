@@ -14,6 +14,7 @@ class AddOrEditMetricSection extends React.Component {
             name: "",
             redirect: false
         };
+        props.resetMetricDispatch();
     }
 
     componentWillMount() {
