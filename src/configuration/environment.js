@@ -1,1 +1,0 @@
-export const serviceURL = "http://165.22.46.177:7000";

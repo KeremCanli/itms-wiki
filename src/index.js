@@ -20,7 +20,9 @@ const encryptor = ReduxPersistTransformEncrypt({
     },
     secretKey: "GXZbK9bNi6nwpKo43InpVsy8AjVrYAxL"
 });
-const enhancer = compose(applyMiddleware(ReduxThunk, ReduxLogger));
+const middlewares = [ReduxThunk];
+process.env.NODE_ENV === "development" && middlewares.push(ReduxLogger);
+const enhancer = compose(applyMiddleware(...middlewares));
 const persistConfig = {
     blacklist: [
         "metric",

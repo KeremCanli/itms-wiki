@@ -1,12 +1,11 @@
 import Axios from "axios";
-import {serviceURL} from "../../configuration/environment.js";
 import {REGISTER, REGISTER_ERROR, REGISTER_RESET, REGISTER_START} from "../action-types/action-types.js";
 
 export function register(register) {
     return dispatch => {
         dispatch({type: REGISTER_START});
         setTimeout(() => {
-            Axios.post(serviceURL + "/register", {
+            Axios.post(process.env.REACT_APP_SERVICE_URL + "/register", {
                 email: register.eMail,
                 name: register.name,
                 password: register.password,

@@ -1,12 +1,11 @@
 import Axios from "axios";
-import {serviceURL} from "../../configuration/environment.js";
 import {LOGIN, LOGIN_ERROR, LOGIN_RESET, LOGIN_START} from "../action-types/action-types.js";
 
 export function login(login) {
     return dispatch => {
         dispatch({type: LOGIN_START});
         setTimeout(() => {
-            Axios.post(serviceURL + "/login", {
+            Axios.post(process.env.REACT_APP_SERVICE_URL + "/login", {
                 email: login.eMail,
                 password: login.password
             }).then(response => response.data).then(data => data && dispatch({
